@@ -1,0 +1,282 @@
+/*
+Reglas = todo el conjunto
+Selectores = elemento al quese le aplica la regla (etiqueta, hijos)
+Declaraciones = 
+propiedades =
+valores = 
+*/
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+}
+
+h1,h2,h3,h4,h5,h6 { 
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -.2px;
+  color: #fff;
+  margin:0;
+}
+h1 strong {
+  color: #f44336;
+}
+
+h2 {
+  color: #f44336;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+ol,ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+figure{
+  margin: 0;
+}
+.container{
+  width: 1000px;
+  margin:0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  
+}
+.header 
+{
+  background-color: #fff;
+  color: #212121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.header ol {
+  display: flex;
+  height: inherit;
+}
+.header ol li {
+  height: inherit;
+}
+
+.header a {
+  color: #212121;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+  text-transform: ;
+}
+
+.hero {
+  height: 300px;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-image{
+  object-fit: cover;
+}
+.portfolio{
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.project {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: #212121;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project strong{
+  font-family: 'Fjalla One', sans-serif;
+  color: #f44336;
+}
+.project-details {
+  width: 500px;
+}
+.project-title{
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.project-subtitle{
+  margin: 10px 0;
+}
+.project-date{
+  margin: 10px 0;
+}
+.project-url{
+  margin:10px 0;
+}
+.project-description{
+  font-size:20px;
+}
+.project-imageContainer {
+  width: 500px;
+}
+.event-list-title{
+  margin-left: 10px;
+}
+.events{
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+.event{
+  border-radius: 10px;
+  margin: 10px;
+  width: 480px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #212121;
+}
+.event img{
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+.event-detail{
+  margin: 20px 40px;
+  margin-top: -40px;
+  background: #fafafa;
+  border-radius: 5px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event-description{
+  text-align: left;
+}
+.event-url{
+  border: 2px solid #f44336;
+  border-radius: 5px;
+  padding: 5px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color:#f44336;
+}
+.contact{
+  background-color: #212121;
+  color:#fff;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-link{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  margin: 0 10px;
+}
+.social-link.twitter{
+  background-image: url("../images/twitter.svg");
+}
+.social-link.facebook{
+  background-image: url("../images/facebook.svg");
+}
+.social-link.github{
+  background-image: url("../images/github.svg");
+}
+.social-link.instagram{
+  background-image: url("../images/instagram.svg");
+}
+.form-email input{
+  border-color:gray;
+  border-style: solid;
+  padding: 10px 20px 10px 25px;
+  border-radius: 5px;
+  background-image: url("../images/envelope.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+.form-email button{
+  display: block;
+  margin-top:10px;
+  background: transparent;
+  color:#fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  border:2px solid #f44336;
+  font-weight: bold;
+  font-size: 17px;
+  width: 100px;
+}
+.form-email h3{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.footer{
+  background: #212121;
+  color:#fff;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+.footer img{
+  vertical-align: middle;
+}
+
+.footer a {
+  color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flexbox{
+display: flex;
+flex-wrap: wrap; /*tirar los elementos a otra fila cuando ya no quepan en la pantalla*/
+flex-direction: row; /*columna o fila*/
+}
+.box{
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+  background-color: #1b2127;
+  margin:5px;
+  flex-shrink: 0; /*valores entre 0 - 1 indica la capacidad de encogimiento del elemento*/
+}
